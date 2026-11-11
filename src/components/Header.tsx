@@ -84,14 +84,21 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBookingModal }) => {
 
           {/* Zone 3: 1 Primary Action + Mobile Hamburger */}
           <div className="flex items-center gap-3 shrink-0">
-            {/* Primary Action Button */}
-            <button
-              onClick={onOpenBookingModal}
-              className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 text-xs lg:text-sm font-semibold tracking-wide uppercase text-white bg-[#899B70] hover:bg-[#74825E] active:scale-[0.98] rounded-full shadow-xs hover:shadow-md transition-all duration-200 cursor-pointer focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#899B70] whitespace-nowrap"
+            {/* Primary Action Button (Direct WhatsApp with pulse animation and hover elevation) */}
+            <a
+              href="https://wa.me/5575991212220?text=Ol%C3%A1%2C%20Jacilma!%20Gostaria%20de%20obter%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento%20psicol%C3%B3gico%20e%20possibilidades%20de%20agendamento."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative group hidden sm:inline-flex items-center gap-2 px-5 py-2.5 text-xs lg:text-sm font-semibold tracking-wide uppercase text-white bg-[#899B70] hover:bg-[#74825E] rounded-full shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#899B70] whitespace-nowrap cursor-pointer"
             >
-              <MessageCircle className="w-4 h-4" />
+              {/* Soft breathing pulse effect matching the floating WhatsApp button */}
+              <span
+                className="absolute inset-0 rounded-full bg-[#899B70] opacity-40 animate-ping -z-10 pointer-events-none"
+                style={{ animationDuration: '3s' }}
+              />
+              <MessageCircle className="w-4 h-4 shrink-0 transition-transform group-hover:rotate-12 duration-300" />
               <span>Agendar Consulta</span>
-            </button>
+            </a>
 
             {/* Mobile Hamburger Toggle */}
             <button
@@ -127,16 +134,16 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBookingModal }) => {
             ))}
 
             <div className="pt-3 border-t border-[#A3B18A]/20 flex flex-col gap-2">
-              <button
-                onClick={() => {
-                  setIsMobileMenuOpen(false);
-                  onOpenBookingModal();
-                }}
-                className="w-full flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold text-white bg-[#899B70] hover:bg-[#74825E] rounded-full shadow-xs transition-colors"
+              <a
+                href="https://wa.me/5575991212220?text=Ol%C3%A1%2C%20Jacilma!%20Gostaria%20de%20obter%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento%20psicol%C3%B3gico%20e%20possibilidades%20de%20agendamento."
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="relative group w-full flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold uppercase tracking-wide text-white bg-[#899B70] hover:bg-[#74825E] rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform active:scale-95"
               >
-                <MessageCircle className="w-4 h-4" />
+                <MessageCircle className="w-4 h-4 shrink-0" />
                 <span>Agendar Consulta</span>
-              </button>
+              </a>
 
               <a
                 href="https://www.conexasaude.com.br/psicologia-clinica/jacilma-carneiro"

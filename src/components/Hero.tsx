@@ -132,7 +132,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBookingModal }) => {
               {/* Main Office Image Container */}
               <div className="relative rounded-2xl overflow-hidden shadow-xl border border-[#A3B18A]/20 bg-[#F3EDE3] aspect-[4/3] lg:aspect-[4/4.5]">
                 <img
-                  src="/src/assets/images/hero_psychologist_office_1794363085587.jpg"
+                  src="/assets/aistudio/image_d1436c35.png"
                   alt="Consultório acolhedor de psicologia com iluminação natural, plantas e poltrona verde-sálvia"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover object-center transform hover:scale-[1.02] transition-transform duration-700 ease-out"

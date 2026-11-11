@@ -42,7 +42,7 @@ export const PsychotherapyBenefits: React.FC<PsychotherapyBenefitsProps> = ({ on
             <div className="relative mx-auto max-w-md lg:max-w-none">
               <div className="rounded-2xl overflow-hidden shadow-md bg-[#FAF9F6] border border-[#A3B18A]/30 aspect-[4/3] sm:aspect-[16/11]">
                 <img
-                  src="/src/assets/images/mindfulness_nature_therapy_1794363087482.jpg"
+                  src="/assets/aistudio/image_b43dca23.png"
                   alt="Composição serena com elementos botânicos e pedras naturais simbolizando equilíbrio e serenidade"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover object-center"
