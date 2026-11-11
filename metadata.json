@@ -1,0 +1,6 @@
+{
+  "name": "Jacilma Lopes Carneiro | Psicóloga Clínica",
+  "description": "Site institucional da psicóloga Jacilma Lopes Carneiro (CRP 03/33397). Atendimento psicológico online e presencial no Hospital HPRO em Conceição do Coité - BA. TCC, Psicanálise, Sexualidade Humana e Psicologia Perinatal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
